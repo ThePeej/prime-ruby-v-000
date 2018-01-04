@@ -1,14 +1,15 @@
 require 'pry'
 
 def prime?(num)
-  test_range = (2..num).to_a
   if (num <= 1)
     false
   elsif (num <= 3)
     true
   elsif (num % 2 == 0 || num % 3 == 0)
     false
-  elsif (!(test_range.any? {|test| test*test == num}))
+  end
+  test_range = (2..num-1).to_a
+  if (test_range.any? {|test| num % test == 0)
     true
   else
     false
