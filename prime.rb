@@ -9,6 +9,7 @@ def prime?(num)
   else
     test_range.any? do |test|
       test*test == num
+      binding.pry
     end
   end
 end
