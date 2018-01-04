@@ -6,10 +6,7 @@ def prime?(num)
     false
   elsif (num <= 3)
     true
-  else
-    test_range.any? do |test|
-      test*test == num
-      binding.pry
-    end
+  elsif (!(test_range.any? {|test| test*test == num}))
+    true
   end
 end
