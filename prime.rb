@@ -9,7 +9,7 @@ def prime?(num)
     false
   end
   test_range = (2..num-1).to_a
-  if (test_range.any? {|test| num % test == 0)
+  if (test_range.any? {|test| num % test == 0})
     false
   else
     true
