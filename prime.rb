@@ -7,7 +7,8 @@ def prime?(num)
   elsif (num <= 3)
     true
   else
-  test_range.any? do |test|
-    test*test == num
+    test_range.any? do |test|
+      test*test == num
+    end
   end
 end
