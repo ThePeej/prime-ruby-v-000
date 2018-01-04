@@ -8,5 +8,7 @@ def prime?(num)
     true
   elsif (!(test_range.any? {|test| test*test == num}))
     true
+  else
+    false
   end
 end
